@@ -8,7 +8,7 @@ const eqArrays = (arrA, arrB) => {
   return isGood;
 };
 
-const assertEqual = function (actual, expected) {
+const assertArraysEqual = function (actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -16,5 +16,5 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-assertEqual([1, 2, 3], [1, 2, 3]);
-assertEqual([1, 2, 3], [1, 2, 4]);
+assertArraysEqual([1, 2, 3], [1, 2, 3]);
+assertArraysEqual([1, 2, 3], [1, 2, 4]);

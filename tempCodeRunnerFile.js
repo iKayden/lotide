@@ -1,1 +1,2 @@
-\n
+
+    if (arrA[i] !== arrB[i]) {

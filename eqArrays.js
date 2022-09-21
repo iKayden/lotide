@@ -11,7 +11,6 @@ const eqArrays = (arrA, arrB) => {
   for (let i = 0; i < arrA.length; i++) {
     if (arrA[i] !== arrB[i]) {
       isGood = false;
-      break;
     }
   }
   console.log(isGood);

@@ -1,15 +1,15 @@
 const assert = require("chai").assert;
 const countLetters = require("../countLetters");
 
-describe("#countLetters", () => {
-  it("returns {} for '' with", () => {
-    const input = "";
-    const expect = {};
-    assert.deepEqual(countLetters(input), expect);
+describe("Function countLetters", () => {
+  it("should return an empty object {} for empty string ", () => {
+    const actual = "";
+    const expected = {};
+    assert.deepEqual(countLetters(actual), expected);
   });
-  it("returns {t:2, e:1, s:1} for 'test' with", () => {
-    const input = "test";
-    const expect = { t: 2, e: 1, s: 1 };
-    assert.deepEqual(countLetters(input), expect);
+  it("should return { p: 2, o: 1 } for 'pop'", () => {
+    const actual = "pop";
+    const expected = { p: 2, o: 1 };
+    assert.deepEqual(countLetters(actual), expected);
   });
 });

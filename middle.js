@@ -1,21 +1,3 @@
-const eqArrays = (arrA, arrB) => {
-  let isGood = true;
-  for (let i = 0; i < arrA.length; i++) {
-    if (arrA[i] !== arrB[i]) {
-      isGood = false;
-    }
-  }
-  return isGood;
-};
-
-const assertArraysEqual = (actual, expected) => {
-  if (eqArrays(actual, expected)) {
-    console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const middle = (arr) => {
   // Creating variables for work with input and output
   const outputArray = [];
@@ -38,11 +20,4 @@ const middle = (arr) => {
   }
 };
 
-assertArraysEqual(middle([1]), []); // => []
-assertArraysEqual(middle([1, 2]), []); // => []
-
-assertArraysEqual(middle([1, 2, 3]), [2]); // => [2]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // => [3]
-
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => [3, 4]
+module.exports = middle;

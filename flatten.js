@@ -1,21 +1,3 @@
-const eqArrays = (arrA, arrB) => {
-  let isGood = true;
-  for (let i = 0; i < arrA.length; i++) {
-    if (arrA[i] !== arrB[i]) {
-      isGood = false;
-    }
-  }
-  return isGood;
-};
-
-const assertArraysEqual = function (actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const flatten = (nestedArrays) => {
   // Initializing reduce function to sim trough unnecessary arrays
   // flatArr is the "previousValue" (arr[0]) and makeFlat is the "currentValue" (arr[1])
@@ -31,4 +13,5 @@ const flatten = (nestedArrays) => {
   );
 };
 
-console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6
+// console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
+module.exports = flatten;

@@ -16,7 +16,6 @@ const assertArraysEqual = function (actual, expected) {
   }
 };
 
-// there is Array.prototype.flat() but I guess it's not cool to just use it, here's workaround.
 const flatten = (nestedArrays) => {
   // Initializing reduce function to sim trough unnecessary arrays
   // flatArr is the "previousValue" (arr[0]) and makeFlat is the "currentValue" (arr[1])

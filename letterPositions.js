@@ -16,15 +16,15 @@ const assertArraysEqual = function (actual, expected) {
   }
 };
 
-const letterPositions = function (sentence) {
+const letterPositions = function (str) {
   const results = {};
-  sentence = sentence.split(" ").join("").toLowerCase();
+  str = str.split(" ").join("").toLowerCase();
 
-  for (let i = 0; i < sentence.length; i++) {
-    if (results[sentence[i]]) {
-      results[sentence[i]].push(i);
+  for (let i = 0; i < str.length; i++) {
+    if (results[str[i]]) {
+      results[str[i]].push(i);
     } else {
-      results[sentence[i]] = [i];
+      results[str[i]] = [i];
     }
   }
   return results;

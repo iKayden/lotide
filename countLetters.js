@@ -6,12 +6,12 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const countLetters = (string) => {
+const countLetters = string => {
   let returnObj = {};
   string = string.split(" ").join("").toLowerCase();
   for (const letter in string) {
     if (string[letter] in returnObj) {
-      returnObj[string[letter]] += 1;
+      returnObj[string[letter]]++;
     } else {
       returnObj[string[letter]] = 1;
     }

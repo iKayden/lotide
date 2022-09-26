@@ -5,7 +5,6 @@ const eqArrays = (arrA, arrB) => {
       isGood = false;
     }
   }
-  console.log(isGood);
   return isGood;
 };
 

@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@kyrylokharchenko/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "This is Kyrylo's Lodash library copy called Lotide. Made for educational purposes only as part of the study about JavaScript and packages.",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/iKayden/lotide.git"
   },
-  "author": "",
+  "author": "Kyrylo (Kayden) Kharchenko",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/iKayden/lotide/issues"
